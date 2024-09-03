@@ -39,7 +39,7 @@
 
         .container {
             position: absolute;
-            top: 50%;
+            top: 80%;
             left: 50%;
             width: 50%;
             transform: translate(-50%, -50%);
@@ -66,8 +66,11 @@
         }
 
         .love-emojis {
-            font-size: 32px;
-            margin-bottom: 15px;
+             font-size: 2rem;
+             display: flex;
+             justify-content: center;
+             gap: 10px;
+             animation: pulse 2s infinite ease-in-out;
         }
 
         .show-more-button {
@@ -111,14 +114,14 @@
             vertical-align: middle;
         }
 
-        .boy girl {
+        .IMG_7914 {
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
-        .boy girl img {
-            width: 100px;
+        .IMG_7914 img {
+            width: 150px;
             height: auto;
         }
         .cake container {
@@ -135,6 +138,55 @@
             margin-top: 25px;
         }
         
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Define the slide-in animation */
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+         @keyframes rotate {
+    from {
+            transform: rotate(0deg);
+         }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+        .animated-paragraph {
+            animation: slideIn 5s ease-in-out, bounce 8s ease-out;
+            /* Control how the animation behaves */
+            animation-delay: 0; /* Wait 0.5 seconds before starting */
+            animation-fill-mode: forwards; /* Keep the end state of the animation */
+            font-size: 1.0em;
+            margin: 50px;
+            color: #333;
+        }
         @keyframes float {
             0% {
                 transform: translateY(0);
@@ -146,6 +198,26 @@
                 transform: translateY(0);
             }
         }
+        @keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+}
+
+@keyframes bounce {
+    0%, 100%, 20%, 50%, 80% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
     </style>
 </head>
 <body>
@@ -154,28 +226,23 @@
     
         <div class="container">
             <h1 class="birthday-message">Happy Birthday to a Precious Person!</h1>
-            <p class="description">You are a treasure, a gem, a shining star in our lives.</p>
+            <p class="description">You are a treasure, a gem, a shining star in my life.</p>
             <div class="love-emojis">
                 ❤️💕💖💗💓
-                <br>
+                <br><br>
             </div>
             <button class="show-more-button">Show More Love!</button>
-            <button class="show-cake-button" onclick="showCake()" >Show Cake!</button> 
-
-            <div class="boy girl">
-                <img src="images/boy girl.png" alt="boy girl" height="50">
+            <div class="IMG_7914">
+                <img src="IMG_7914.png" alt="IMG_7914" height="50">
                 </div>
-               
-            <div class="cake-container">
-            <img src="cake128.png" alt="Birthday Cake"  class="cake-image" id="cakeImage"> 
-            </div>
 
             <div class="more-love-message" style="display: none;">
-                <span class="word">I love you ashu</span>
-                <span class="word">dont feel lonely</span>
-                <span class="word">you</span>
-                <span class="word">more!</span>
-                <span class="heart">❤️</span>
+                <p class="animated-paragraph"> Happy birthday Bittu..! I just wanted to take a moment to let you know just how much you mean to me❤️.</p>
+                <p class="animated-paragraph">From the very first moment we met, I knew I had encountered someone extraordinary. Your warmth, kindness, and genuine spirit have touched my life in ways that words can hardly describe.</p>
+                <p class="animated-paragraph">Knowing you has been one of the greatest blessings of my life. You inspire me to be a better person every day, and I am endlessly grateful for the joy and love you bring into my world. You truly are a wonderful person, and I am so fortunate to have you by my side.</p>
+                <p class="animated-paragraph">And difficult times will not stay with you through out your life. So be confident on what you do, stay focused greater things take time Bittu. Dont ever feel like why every bad situations are happening in my life only,every thing happen for good, so learn from them and i know you are more capable of doing any thing and i belive in you. Never doubtyourself , be happy always thats what i want</p>
+                <p class="animated-paragraph">love you kanna...!</p>
+                <span class="animated-paragraph">❤️</span>
             </div>
         </div>
         
